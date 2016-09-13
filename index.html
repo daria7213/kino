@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Поиск фильмов по году</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+    <script src="inc/js/main.js"></script>
+    <link rel="stylesheet" href="inc/css/normalize.css">
+    <link rel="stylesheet" href="inc/css/styles.css">
+</head>
+<body>
+    <div id="main">
+        <div class="wrapper">
+            <div class="search">
+                <label for="year">Введите год:</label>
+                <input type="text" id="year" placeholder="Введите год">
+                <button id="find">Найти фильмы</button>
+                <div class="error" hidden></div>
+            </div>
+            <div class="wait"><img src="inc/img/ajax-loader.gif"><p>Загрузка...</p></div>
+            <div class="movies"></div>
+        </div>
+    </div>
+</body>
+</html>
